@@ -21,8 +21,8 @@ public class TarjetaAPI {
 	static {
 		Tarjeta tarjeta = new Tarjeta();
 		tarjeta.setId(1);
-		tarjeta.setNombreTitular("Eduardo Castillo");
-		tarjeta.setNombreEntidad("Space Money");
+		tarjeta.setNombreTitular("Victor Jose Arana Rodriguez");
+		tarjeta.setNombreEntidad("City Banamex");
 		tarjeta.setNumeroTarjeta("1234-1234-2143-2344");
 		tarjeta.setMarca("Space VISA");
 		tarjeta.setFechaCaducidad("10/12");
@@ -36,8 +36,8 @@ public class TarjetaAPI {
 	}
 	
 	@GetMapping
-	public void obtenerTarjetas() {
-		System.out.println("Obtener tarjetas");
+	public List<Tarjeta> obtenerTarjetas() {
+		return tarjetas;
 	}
 	
 	@PutMapping
